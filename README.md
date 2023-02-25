@@ -39,6 +39,11 @@ npm run pretest
 npm run test:firefox:run
 ```
 
+4. generate report
+```bash
+npx playwright show-report
+```
+
 ### Test Files
 
 These are all kept within the `./tests/` folder 
