@@ -1,0 +1,22 @@
+{
+  "name": "Automation Test Store Assetment",
+  "version": "1.0.0",
+  "description": "Tyme Take Home Assetment",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome:watch": "npx playwright test --config=playwright-chrome.config.ts",
+    "test:chrome:run": "npx playwright test --headed --config=playwright-chrome.config.ts",
+    "test:firefox:watch": "npx playwright test --config=playwright-firefox.config.ts",
+    "test:firefox:run": "npx playwright test --headed --config=playwright-firefox.config.ts",
+    "test:safari:watch": "npx playwright test --config=playwright-safari.config.ts",
+    "test:safari:run": "npx playwright test --headed --config=playwright-safari.config.ts",
+    "clean:reports": "rm -rf /playwright-report/* || true",
+    "pretest": "npm run clean:reports"
+  },
+  "keywords": [],
+  "author": "Tuan Tran",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.31.1"
+  }
+}
